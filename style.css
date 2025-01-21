@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Quicksand", serif;
+}
+
+#menu-bar {
+  display: none;
+}
+
+.margin {
+  padding: 0 10%;
+}
+
+.section-heading{
+    font-size: 42px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-logo-name {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.nav-list {
+  display: flex;
+  gap: 3rem;
+}
+
+.nav-list > li > a {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#list-1 {
+  color: rgb(254, 163, 1);
+}
+#list-2 {
+  color: rgb(1, 172, 253);
+}
+#list-3 {
+  color: rgb(5, 212, 223);
+}
+#list-4 {
+  color: rgb(93, 88, 239);
+}
+
+.nav-btn {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  padding: 10px 50px;
+  border: none;
+  border-radius: 12px;
+  background: rgb(254, 163, 1);
+}
+
+/* responsive media query for very small screen device */
+
+@media screen and (max-width: 576px) {
+  .margin {
+    padding: 0;
+  }
+
+  nav {
+    padding: 0 20px;
+    border-bottom: 0.5px solid rgb(254, 163, 1);
+  }
+
+  .nav-logo-name {
+    display: none;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+
+  #menu-bar {
+    display: inline;
+    font-size: 28px;
+  }
+
+}
