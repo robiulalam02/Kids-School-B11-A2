@@ -23,6 +23,11 @@ section {
   justify-content: space-evenly;
 }
 
+main{
+  background: url(assets/bg.png);
+  background-repeat: no-repeat;
+}
+
 #menu-bar {
   display: none;
 }
@@ -34,6 +39,8 @@ section {
 .section-heading {
   font-size: 42px;
 }
+
+/* Nav part CSS */
 
 nav {
   display: flex;
@@ -91,6 +98,8 @@ nav {
   background: rgb(255, 190, 77);
 }
 
+/* Hero part CSS */
+
 .hero {
   display: flex;
   align-items: center;
@@ -132,10 +141,7 @@ nav {
   box-shadow: 2px 2px 20px rgb(255, 162, 0);
 }
 
-main{
-  background: url(assets/bg.png);
-  background-repeat: no-repeat;
-}
+/* Curriculum part CSS */
 
 .curriculum {
   height: 850px;
@@ -239,6 +245,8 @@ main{
   border-radius: 50%;
   background: rgb(254, 163, 1);
 }
+
+/* Our Stories part CSS */
 
 .our-stories {
   display: flex;
@@ -350,6 +358,8 @@ main{
   background: rgb(93, 88, 240);
 }
 
+/* Footer part CSS */
+
 footer{
   height: 500px;
   background: #00affe;
@@ -370,10 +380,6 @@ footer{
   gap: 3rem;
 }
 
-/* #foot-second-part{
-  width: 80%;
-} */
-
 .foot-logo{
   display: flex;
 }
@@ -388,7 +394,6 @@ footer{
   color: white;
   padding-left: .5em;
   line-height: 1.5em;
-  /* width: 40%; */
   text-wrap: 10px;
 }
 
@@ -407,7 +412,6 @@ footer{
 .foot-list li a{
   font-size: 1.2em;
   color: white;
-  /* font-weight: 500; */
 }
 
 .foot-social{
@@ -426,6 +430,8 @@ footer{
   .margin {
     padding: 0;
   }
+
+  /* nav part */
 
   nav {
     padding: 0 20px;
@@ -449,6 +455,8 @@ footer{
     font-size: 28px;
   }
 
+  /* Hero part */
+
   .hero {
     flex-direction: column-reverse;
   }
@@ -471,6 +479,8 @@ footer{
     font-size: 2.5rem;
   }
 
+  /* curriculum part */
+
   .curriculum {
     height: auto;
     padding: 50px 0;
@@ -485,6 +495,8 @@ footer{
   .arrow-conatainer {
     display: none;
   }
+
+  /* our stories part */
 
   .our-stories{
     height: auto;
@@ -509,6 +521,8 @@ footer{
     left: -10px;
     font-size: .9em;
   }
+
+  /* footer part */
 
   footer{
     height: auto;
