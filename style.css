@@ -23,6 +23,10 @@ section {
   justify-content: space-evenly;
 }
 
+header{
+  margin-bottom: 2rem;
+}
+
 main{
   background: url(assets/bg.png);
   background-repeat: no-repeat;
@@ -145,7 +149,7 @@ nav {
 /* Curriculum part CSS */
 
 .curriculum {
-  height: 850px;
+  height: 900px;
 }
 
 .curriculum-card-container {
@@ -156,6 +160,8 @@ nav {
 
 .curriculum-card {
   height: 480px;
+  width: 100%;
+  padding: 0 2rem;
   border: 0.94px solid rgb(255, 244, 220);
   border-radius: 18.86px;
   box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
@@ -204,6 +210,7 @@ nav {
 }
 
 .curriculum-card-description {
+  line-height: 1.8em;
   font-size: 1em;
   color: rgb(128, 128, 128);
 }
@@ -490,6 +497,9 @@ footer{
   /* curriculum part */
 
   .curriculum {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: auto;
     padding: 50px 0;
   }
@@ -499,6 +509,10 @@ footer{
     padding: 0 20px;
     margin-top: 50px;
   }
+
+  /* .curriculum-card{
+    padding: 0 20%;
+  } */
 
   .arrow-conatainer {
     display: none;
