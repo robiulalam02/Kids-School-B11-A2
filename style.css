@@ -84,6 +84,11 @@ nav {
   border: none;
   border-radius: 12px;
   background: rgb(254, 163, 1);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-btn:hover{
+  background: rgb(255, 190, 77);
 }
 
 .hero {
@@ -120,6 +125,11 @@ nav {
   border: none;
   border-radius: 12px;
   background: black;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero-btn:hover{
+  box-shadow: 2px 2px 20px rgb(255, 162, 0);
 }
 
 main{
@@ -237,8 +247,7 @@ main{
   height: 1000px;
   background: url(assets/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  background-size: cover;
 }
 
 .stories-card-container {
@@ -341,6 +350,71 @@ main{
   background: rgb(93, 88, 240);
 }
 
+footer{
+  height: 500px;
+  background: #00affe;
+  display: flex;
+  align-items: center;
+}
+
+.foot-main{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.foot-part{
+  
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* #foot-second-part{
+  width: 80%;
+} */
+
+.foot-logo{
+  display: flex;
+}
+
+.foot-logo-heading{
+  font-size: 2rem;
+  color: white;
+}
+
+.foot-description p{
+  font-size: 18px;
+  color: white;
+  padding-left: .5em;
+  line-height: 1.5em;
+  /* width: 40%; */
+  text-wrap: 10px;
+}
+
+.foot-side-heading{
+  font-size: 1.5em;
+  color: white;
+  font-weight: 700;
+}
+
+.foot-list{
+  display: flex;
+  flex-direction: column;
+  gap: 1.3em;
+}
+
+.foot-list li a{
+  font-size: 1.2em;
+  color: white;
+  /* font-weight: 500; */
+}
+
+.foot-social{
+  display: flex;
+  gap: 1em;
+}
+
 /* responsive media query for very small screen device */
 
 @media screen and (max-width: 576px) {
@@ -434,6 +508,25 @@ main{
     top: -22px;
     left: -10px;
     font-size: .9em;
+  }
+
+  footer{
+    height: auto;
+  }
+
+  .foot-main{
+    flex-direction: column;
+    padding: 1rem;
+    gap: 2rem;
+    margin: 10% 0;
+  }
+
+  .foot-part{
+    gap: 2rem;
+  }
+
+  .foot-description p{
+    padding: 0;
   }
 
 }
